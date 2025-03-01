@@ -5,6 +5,7 @@ from pymongo import MongoClient
 from editions import show_editions_page
 from athletes import show_athletes_page
 from disciplines import show_disciplines_page
+from accueil import show_accueil_page
 
 client = MongoClient("localhost", 27017)
 
@@ -46,8 +47,7 @@ st.markdown("""
 tab1, tab2, tab3, tab4 = st.tabs(["Accueil", "Éditions des JO", "Résultats des Athlètes", "Synthèse des Disciplines"])
 
 with tab1:
-    st.header("Bienvenue sur l'application des JO !")
-    st.write("Sélectionnez un onglet pour explorer les JO.")
+    show_accueil_page()
 
 with tab2:
     show_editions_page(editions)

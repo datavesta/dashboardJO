@@ -100,7 +100,7 @@ def show_disciplines_page(disciplines):
 
             medals_by_athlete= pd.DataFrame(discipline_json[0]["medals_by_athlete"])[["name","Gold","Silver","Bronze","total"]].sort_values(by=["Gold","Silver","Bronze"], ascending=[False, False,False])
 
-            st.dataframe(medals_by_athlete, use_container_width=True, hide_index=True)
+            st.dataframe(medals_by_athlete, use_container_width=True, hide_index=True, height=457)
 
 
        
