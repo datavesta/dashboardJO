@@ -1,0 +1,9 @@
+[theme]
+primaryColor = "#7823B9"  # Couleur principale (ex: boutons, sliders)
+
+font = "sans serif"  # Police (serif, sans serif, monospace)
+
+
+[server]
+runOnSave = true
+
